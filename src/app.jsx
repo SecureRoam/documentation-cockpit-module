@@ -31,11 +31,16 @@ export class Application extends React.Component {
                             <p>
                                 Secure Roam Companion protects your device from malicious networks.
                             </p>
-                            You can connect to the Wi-Fi network using the Wi-Fi settings.
                             <br />
-                            <Button variant="secondary" ouiaId="Secondary">
-                                Go to Wi-Fi settings
-                            </Button>{' '}
+                            <div>
+                                You can connect to the Wi-Fi network using the Wi-Fi settings.
+                            </div>
+                            <br />
+                            <a href="http://cockpit.secureroamcompanion.org/NetworkManager" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary" ouiaId="Secondary">
+                                    Go to Wi-Fi settings
+                                </Button>{' '}
+                            </a>
                         </WizardStep>
                         <WizardStep name="Check the firewall settings" id="firewall-step">
                             <p>
@@ -50,9 +55,11 @@ export class Application extends React.Component {
                                 By default, the firewall drop all incoming connections except for the 80 (HTTP) and 443 (HTTPS) ports.
                             </div>
                             <br />
-                            <Button variant="secondary" ouiaId="Secondary">
-                                Go to firewall settings
-                            </Button>{' '}
+                            <a href='http://cockpit.secureroamcompanion.org/IptableManager' target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary" ouiaId="Secondary">
+                                    Go to firewall settings
+                                </Button>{' '}
+                            </a>
                         </WizardStep>
                         <WizardStep name="Connect your VPN" id="vpn-step">
                             <p>
@@ -67,9 +74,11 @@ export class Application extends React.Component {
                                 You can route all your traffic trought the Tor network. Learn more about the Tor network.
                             </Alert>
                             <br />
-                            <Button variant="secondary" ouiaId="Secondary">
-                                Go to VPN settings
-                            </Button>{' '}
+                            <a href='http://cockpit.secureroamcompanion.org/VpnManager' target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary" ouiaId="Secondary">
+                                    Go to VPN settings
+                                </Button>{' '}
+                            </a>
                         </WizardStep>
                         <WizardStep name="Check the DNS filter" id="dns-step">
                             <p>
@@ -84,9 +93,11 @@ export class Application extends React.Component {
                                 Pi-hole is configured to block all domains from the StevenBlack's hosts file.
                             </div>
                             <br />
-                            <Button variant="secondary" ouiaId="Secondary">
-                                Go to DNS settings
-                            </Button>{' '}
+                            <a href='http://dns-filter.secureroamcompanion.org/' target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary" ouiaId="Secondary">
+                                    Go to DNS settings
+                                </Button>{' '}
+                            </a>
                         </WizardStep>
                         <WizardStep name="Review" id="basic-review-step" footer={{ nextButtonText: 'Finish' }}>
                             <p>
@@ -97,9 +108,11 @@ export class Application extends React.Component {
                                 You can visit the Secure Roam Companion comprehensive documentation.
                             </div>
                             <br />
-                            <Button variant="secondary" ouiaId="Secondary">
-                                Go to documentation
-                            </Button>{' '}
+                            <a href='http://docs.secureroamcompanion.org/' target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary" ouiaId="Secondary">
+                                    Go to documentation
+                                </Button>{' '}
+                            </a>
                         </WizardStep>
                     </Wizard>
                 </Card>

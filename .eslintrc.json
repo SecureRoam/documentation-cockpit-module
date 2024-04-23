@@ -6,7 +6,7 @@
     },
     "extends": ["eslint:recommended", "standard", "standard-jsx", "standard-react"],
     "parserOptions": {
-        "ecmaVersion": "2022",
+        "ecmaVersion": 2022,
         "sourceType": "module"
     },
     "plugins": ["react", "react-hooks"],
