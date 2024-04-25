@@ -72,7 +72,7 @@ set to upload code changes to `~/.local/share/cockpit/` instead of
 To "uninstall" the locally installed version, run `make devel-uninstall`, or
 remove manually the symlink:
 
-    rm ~/.local/share/cockpit/VpnManager
+    rm ~/.local/share/cockpit/QuickStartGuide
 
 # Running eslint
 
